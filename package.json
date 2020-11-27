@@ -1,0 +1,14 @@
+{
+  "name": "@xompass/virtual-expression-evaluator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^8.0.1"
+  }
+}
