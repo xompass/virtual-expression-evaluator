@@ -107,9 +107,9 @@ function evaluate(expression, virtualVariables, from, to, summaries) {
 
     if (Object.keys(scope).length === Object.keys(variables).length) {
       let evaluated = compiled.evaluate(scope);
-      if (utils.isValidNumber(evaluated)) {
-        result[hour] = {time: hour, value: evaluated};
-      }
+      result[hour] = {time: hour, value: utils.isValidNumber(evaluated) ? evaluated : null};
+    } else {
+      result[hour] = {time: hour, value: null};
     }
   }
   result = Object.values(result);
